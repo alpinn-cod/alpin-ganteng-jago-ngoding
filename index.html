@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Data Siswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="crudPage">
+
+  <h1>CRUD DATA SISWA</h1>
+
+  <input type="text" id="search"
+  placeholder="Cari data..."
+  onkeyup="cariData()">
+
+  <input type="text" id="nis" placeholder="Masukkan NIS">
+  <input type="text" id="nama" placeholder="Masukkan Nama">
+  <input type="text" id="kelas" placeholder="Masukkan Kelas">
+  <input type="text" id="jurusan" placeholder="Masukkan Jurusan">
+
+  <input type="file" id="foto">
+
+  <div class="btn-group">
+
+    <button onclick="tambahData()">Simpan</button>
+    <button onclick="updateData()">Update</button>
+    <button onclick="hapusData()">Delete</button>
+    <button onclick="bersih()">Clear</button>
+    <button onclick="cetakData()">Cetak</button>
+
+  </div>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>NIS</th>
+        <th>Nama</th>
+        <th>Kelas</th>
+        <th>Jurusan</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+
+    <tbody id="tbody">
+
+    </tbody>
+
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
