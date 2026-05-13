@@ -1,0 +1,78 @@
+body
+
+.container,
+.container{
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.btn-group{
+    margin-top: 15px;
+}
+
+button{
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td{
+    border: 1px solid black;
+}
+
+th,
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover{
+    background: #ddd;
+    cursor: pointer;
+}
+
+img{
+    border-radius: 5px;
+}
+
+@media(max-width:768px){
+
+    .container,
+    .login-box{
+        width: 95%;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
